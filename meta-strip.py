@@ -22,6 +22,9 @@ import getpass
 def main():
     print("Meta-Strip developed by Huevo")
     count = len(sys.argv)
+    if count < 2:
+        print("Not enough arguments!")
+        exit()
     x = 1
     new_path = input("Where would you like to save your images?: ")
     if new_path[0] == '~':
